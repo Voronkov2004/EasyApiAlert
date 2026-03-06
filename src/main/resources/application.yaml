@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: EasyApiAlert
+telegram:
+  bot:
+    token: ${ALERT_TELEGRAM_BOT_TOKEN}
+    chat-id: ${ALERT_TELEGRAM_CHAT_ID}
+
+easyapialert:
+  window: 1m
+  cooldown: 30s
+  min-requests: 5
+  error-rate-threshold-percent: 5
+  exclude-paths:
+    - /error
+    - /actuator
+    - /actuator/**
+    - /swagger-ui/**
+  warning-severity-threshold-percent: 20
