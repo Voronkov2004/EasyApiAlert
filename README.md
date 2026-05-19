@@ -101,22 +101,20 @@ Route: GET /api/users/{id}
 
 # Installation
 
-## Gradle
+The project is currently intended for local development and has not yet been published to a public Maven repository.
+
+To use the library locally:
+
+```bash
+./gradlew publishToMavenLocal
+```
+
+Then add the dependency:
 
 ```groovy
 dependencies {
     implementation 'YOUR_GROUP_ID:easy-api-alert:VERSION'
 }
-```
-
-## Maven
-
-```xml
-<dependency>
-    <groupId>YOUR_GROUP_ID</groupId>
-    <artifactId>easy-api-alert</artifactId>
-    <version>VERSION</version>
-</dependency>
 ```
 
 ---
